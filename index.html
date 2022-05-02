@@ -109,29 +109,29 @@
         <ul class="list-content">
             
           <li class="item">
-            <div class="dex-content">
+            <!-- <div class="dex-content"> -->
               <img src="./images/photo.jpg" width="370" height="294" alt=Програмирование >
-            <div class="desktop-application">
-               <h2 class="dext-text">Десктопные приложения</h2>
-            </div>
-            </div>
+            <!-- <div class="desktop-application"> -->
+               <p class="dext-text">Десктопные приложения</p>
+            <!-- </div> -->
+            <!-- </div> -->
             </li>
            <li class="item">
-            <div class="dex-content">
+            <!-- <div class="dex-content"> -->
              <img src="./images/photo1.jpg" width="370" height="294" alt=Оформление>
-            <div class="desktop-application">
-                <h2 class="dext-text">Мобильные приложения</h2>
-            </div>
-            </div>
+            <!-- <div class="desktop-application"> -->
+                <p class="dext-text">Мобильные приложения</p>
+            <!-- </div>
+            </div> -->
            </li>
            <li class="item">
-            <div class="dex-content">
+            <!-- <div class="dex-content"> -->
             <img src="./images/photo2).jpg" width="370" height="294" alt=Установка>
-            <div class="desktop-application">
-                <h2 class="dext-text">Дизайнерские решения</h2>
-            </div>
-            </div>
-           </li>
+            <!-- <div class="desktop-application"> -->
+                <p class="dext-text">Дизайнерские решения</p>
+            <!-- </div>
+            </div> -->
+           </li> 
         </ul>
         </div>
     </section>
@@ -401,8 +401,44 @@
         <use href="./images/sprite.svg#icon-close-black"></use>
    </svg>
 </button>
+
+ <form class="form" action="#" autocomplete="off" novalidate>
+<h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+     <div class="form-class list-top">
+     <label class="form-label" for="name" > Имя</label>
+     <input class="form-input" id="name" type="text">
+    <svg class="form-icon" >
+    <use href="./images/sprite.svg#icon-person-black-18dp-1-1" width="15px" height="15px"></use>
+    </svg>
+</div>
+<div class="form-class">
+    <label class="form-label" for="contact-tel">Телефон</label>
+    <input class="form-input" id="contact-tel" type="contact-tel">
+    <svg class="form-icon">
+        <use href="./images/sprite.svg#icon-phone-black-18dp-1-1" width="15px" height="15px"></use>
+    </svg>
+</div>
+<div class="form-class">
+    <label class="form-label" for="contact-email">Почта</label>
+    <input class="form-input" id="contact-email" type="email">
+    <svg class="form-icon">
+        <use href="./images/sprite.svg#icon-email-black-18dp-1-1" width="15px" height="15px"></use>
+    </svg>
+</div>
+<div class="form-class">
+  <label class="form-label" for="form-textarea">Комментарий</label>
+  <textarea class="form-input form-textarea" name="form-comment" id="form-textarea" placeholder="Введите текст"></textarea>
+</div>
+<div class="form-class">
+<label class="form-checkbox" for="form-checkbox">
+<input class="" id="form-checkbox" type="checkbox">
+Соглашаюсь с рассылкой и принимаю <a class="form-link" href=""> Условия договора</a>
+
+</label>
+</div>
+</form>
     </div>
    </div>
-    <script src="./js/modal.js"></script>
+   <script src="./js/modal.js"></script>
   </body>
  </html>
