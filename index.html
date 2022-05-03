@@ -350,7 +350,7 @@
         <!-- <a href="./index.html" class="logo">
         <span class="part part-logo">Web</span>Studio</a> -->
     <ul class="address">
-     <li a> Киев, пр-т Леси Украинки, 26</li>
+     <li>  Киев, пр-т Леси Украинки, 26</li>
      </ul>
     <ul class="text-meta">
      <li><a class="link" href="malito:info@devstudio.com">info@devstudio.com</a></li>
@@ -391,6 +391,12 @@
 </li>
     </ul>
 </div>
+<div class="footer-mailing">
+    <p class="title-mailing">Подпишитесь на рассылку</p>
+    <label class="mailing-leibel" for="contact-email"></label>
+    <input class="mailing-input" id="contact-email" placeholder="E-mail" type="email">
+    <button class="button-mailing" type="button">Отправить</button> 
+</div>
 </div>
     </footer>
    </main>
@@ -403,17 +409,17 @@
 </button>
 
  <form class="form" action="#" autocomplete="off" novalidate>
-<h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
      <div class="form-class list-top">
      <label class="form-label" for="name" > Имя</label>
-     <input class="form-input" id="name" type="text">
+     <input class="form-input current" id="name" type="text">
     <svg class="form-icon" >
     <use href="./images/sprite.svg#icon-person-black-18dp-1-1" width="15px" height="15px"></use>
     </svg>
 </div>
 <div class="form-class">
     <label class="form-label" for="contact-tel">Телефон</label>
-    <input class="form-input" id="contact-tel" type="contact-tel">
+    <input class="form-input" id="contact-tel" type="tel">
     <svg class="form-icon">
         <use href="./images/sprite.svg#icon-phone-black-18dp-1-1" width="15px" height="15px"></use>
     </svg>
@@ -426,16 +432,17 @@
     </svg>
 </div>
 <div class="form-class">
-  <label class="form-label" for="form-textarea">Комментарий</label>
-  <textarea class="form-input form-textarea" name="form-comment" id="form-textarea" placeholder="Введите текст"></textarea>
+ <label class="comment-label" for="comment">Комментарий</label>
+<textarea class="form-input comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
 </div>
-<div class="form-class">
+<div class="class-checkbox">
 <label class="form-checkbox" for="form-checkbox">
 <input class="" id="form-checkbox" type="checkbox">
 Соглашаюсь с рассылкой и принимаю <a class="form-link" href=""> Условия договора</a>
 
 </label>
 </div>
+<button class="button-modal" type="button">Отправить</button>
 </form>
     </div>
    </div>
