@@ -208,7 +208,7 @@ margin-top: 0%;
     text-decoration: none;
   }
   
-  .text-meta .link:hover,
+  .text-meta .link:hover, 
   .text-meta .link:focus {
     color: #2196F3;
 
@@ -257,8 +257,7 @@ margin-top: 0%;
   /* Подпишитесь на рассылку в шапке */
 
   .footer-mailing{
-    margin-left: 93px;
-    width: 570px;
+    margin-left: auto;
   }
    .title-mailing {
     font-weight: 700;
@@ -286,20 +285,22 @@ margin-top: 0%;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: var(--h1-color);
+  color: var(--accent-color);
 }
-.button-mailing{
-    display:inline-flex;
+
+   .button-mailing {
+   display:inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     margin: 0 ;
     border-radius: 4px;
-    /* width: 200px; */
-    padding: 10px 47px;
+   width: 200px;
+    padding:0;
     margin-left: 12px;
     height: 50px;
     color: var(--address-footer-color);
-
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     background-color: var(--accent-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -307,8 +308,15 @@ margin-top: 0%;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    border: none;
+    border: none; 
 
+}
+.button-mailing::after{
+  content: "";
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icon\ \ telegram.svg);
 }
 
   /* h2наша команда в ul */
@@ -757,14 +765,13 @@ height: 44px;
  /* .works{
    background-color: var(--logo-nav-color);
  } */
-.modal-icon{
-  width: 11px;
-  height: 11px;
 
-}
+
 .modal-icon:hover,
 .modal-icon:focus{
 fill: var(--accent-color);
+border-color: var(--accent-color);
+border: none;
 }
 /* офомления модал окна  */
 .form{
@@ -836,6 +843,8 @@ border-color: var(--accent-color);
   color: rgba(117, 117, 117, 0.5);
 }
 .form-checkbox{
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -851,6 +860,7 @@ color: var(--title-text-paragraph);
 } */
  .form-link{
    color: var(--accent-color);
+   margin-left: 3px;
  }
  .button-modal{
       display:flex;
@@ -870,9 +880,35 @@ color: var(--title-text-paragraph);
       border: none;
  }
  .class-checkbox{
-   margin-top: 20px;
-   margin-bottom: 30px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   padding-left: 14px;
  }
+  .input-checkbox{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    }
+.input-checkbox:checked +.checkbox-icon{
+  background-image: url(../images/like-icon.svg);
+  background-color: var(--accent-color);
+  background-position: center;
+  border-color: var(--accent-color);
+}
+.checkbox-icon{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: solid #212121;
+  background-color: var(--logo-footer-color);
+  margin-right: 8px;
+}
 /* .form-label, .comment-label{
   font-weight: 400;
   font-size: 12px;
